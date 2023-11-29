@@ -1,0 +1,14 @@
+* {
+    position: absolute;
+}
+
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.DJ {
+    width: 680px;
+    height: 740px;
+}
