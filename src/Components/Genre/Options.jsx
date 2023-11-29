@@ -1,11 +1,11 @@
 import React from "react";
 import Styles from "./Options.module.css"
 
-const Options = () =>{
+const Options = () => {
 
     return (
         <>
-        
+
         </>
     )
 }

@@ -3,9 +3,9 @@ import Styles from "./Choices.module.css"
 
 const Choices = () => {
 
-    return(
+    return (
         <>
-        <p className={Styles.heading}>Hello</p>
+            <p className={Styles.heading}>Hello</p>
         </>
     )
 }
