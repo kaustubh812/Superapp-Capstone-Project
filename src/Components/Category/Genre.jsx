@@ -85,8 +85,8 @@ const Genre = () => {
       return;
     } else {
       setLengthError(false);
-      window.localStorage.setItem("genres", JSON.stringify([...categories]));
-      navigate("/browse");
+      window.localStorage.setItem("Genres", JSON.stringify([...categories]));
+      navigate("/HomePage");
     }
   };
 
@@ -164,15 +164,15 @@ const Block = ({ data, idx, setCategories, categories }) => {
         color: "white",
         padding: "11px",
         borderRadius: "12px",
-        display: "flex",          
-        flexDirection: "column",  
+        display: "flex",
+        flexDirection: "column",
         alignItems: "flex-start",
         border: `${selected ? "4px solid green" : "4px solid transparent"}`,
         marginBottom: "10px"
       }}
     >
       {/* Display genre name and image inside the block */}
-      <p style={{ margin: "0 0 20px", fontSize: "22px", fontFamily: "DM Sans"}}>{data.id}</p>
+      <p style={{ margin: "0 0 20px", fontSize: "22px", fontFamily: "DM Sans" }}>{data.id}</p>
       {data.image}
     </div>
   );

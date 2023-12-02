@@ -2,13 +2,13 @@ import React from "react";
 import Genre from "../Components/Category/Genre"
 
 
-const GenrePage = () =>{
+const GenrePage = () => {
 
-    return(
+    return (
         <>
 
-        <Genre/>
-            
+            <Genre />
+
         </>
     )
 }
