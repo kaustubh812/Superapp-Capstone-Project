@@ -1,6 +1,6 @@
 import React from "react";
 import RegisterPage from "./Pages/RegisterPage";
-import GenrePage from "./Pages/GenrePage";
+import CategoryPage from "./Pages/CategoryPage";
 import { Route, Routes } from 'react-router-dom'
 import './App.css'
 
@@ -10,8 +10,8 @@ function App() {
     <Routes>
 
       <Route path="/" element={<RegisterPage />} />
-      
-      <Route path="/GenrePage" element={<GenrePage />} />
+
+      <Route path="/CategoryPage" element={<CategoryPage />} />
 
     </Routes>
   )

@@ -7,17 +7,9 @@
     --DM-font-family: 'DM Sans', sans-serif;
 }
 
-* {
-    position: absolute;
-}
-
-body {
-    background-color: black;
-    margin: 0;
-    padding: 0;
-}
 
 h1 {
+    position: absolute;
     left: 1040px;
     color: var(--neon-color);
     height: 94px;
@@ -32,12 +24,13 @@ h1 {
 }
 
 h3 {
+    position: absolute;
     left: 1022px;
     color: white;
     height: 94px;
     width: 350px;
     top: 135px;
-    font-family: DM Sans;
+    font-family: var(--DM-font-family);
     font-size: 18px;
     font-weight: 400;
     line-height: 35px;
@@ -47,6 +40,7 @@ h3 {
 }
 
 .input_text {
+    position: absolute;
     width: 350px;
     height: 40px;
     border-radius: 4px;
@@ -58,11 +52,13 @@ h3 {
 }
 
 .checkbox {
+    position: absolute;
     top: 493px;
     left: 953px;
 }
 
 #checktext {
+    position: absolute;
     width: 433px;
     height: 19px;
     top: 472px;
@@ -75,7 +71,8 @@ h3 {
     text-align: left;
 }
 
-button {
+.signUpButton {
+    position: absolute;
     left: var(--left-measure);
     width: 355px;
     height: 40px;
@@ -93,6 +90,7 @@ button {
 }
 
 .terms {
+    position: absolute;
     width: 360px;
     height: 53px;
     left: var(--left-measure);
@@ -106,6 +104,7 @@ button {
 }
 
 .error {
+    position: absolute;
     color: red;
     left: var(--left-measure);
     width: 120px;

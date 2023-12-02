@@ -74,7 +74,7 @@ const SignUp = () => {
 
     if (isValid) {
       window.localStorage.setItem('userInfo', JSON.stringify(formValues));
-      navigate('./GenrePage');
+      navigate('./CategoryPage');
     }
   };
 
@@ -133,7 +133,7 @@ const SignUp = () => {
         <p id={style.checktext}>Share my registration data with Superapp</p>
         {errors.check && <p className={style.error} style={{ top: '500px' }}>{errors.check}</p>}
 
-        <button type="submit" onClick={(e) => handleSubmit(e)}>
+        <button type="submit" className={style.signUpButton} onClick={(e) => handleSubmit(e)}>
           SIGN UP
         </button>
 
