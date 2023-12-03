@@ -66,7 +66,7 @@ const Weather = () => {
                 style={{
                     height: "9vh",
                     background: "#FF4ADE",
-                    borderRadius: "20px",
+                    borderRadius: "20px 20px 0 0 ",
                     color: "white",
                     display: "flex",
                     justifyContent: "space-evenly",
