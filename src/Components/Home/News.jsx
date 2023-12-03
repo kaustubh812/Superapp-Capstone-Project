@@ -51,13 +51,13 @@ const News = () => {
             {/* News Image */}
             <img
                 src={news.urlToImage}
-                style={{ height: "51vh", borderRadius: "20px 20px 0 0", width: "20vw", margin: "9vh 0 0 77vw" }}
+                style={{ height: "56.2vh", borderRadius: "20px 20px 0 0", width: "20vw", margin: "-1vh 0 0 68vw" }}
             />
 
             {/* News Description */}
             <div
                 style={{
-                    height: "30vh",
+                    height: "32vh",
                     borderRadius: "0 0 20px 20px",
                     width: "20vw",
                     background: "white",
@@ -66,8 +66,8 @@ const News = () => {
                     fontSize: "0.9rem",
                     padding: "19px",
                     position: "absolute",
-                    top: "61vh",
-                    left: "77.4vw",
+                    top: "56vh",
+                    left: "68.4vw",
                     boxSizing: "border-box",
                 }}
             >
@@ -80,10 +80,10 @@ const News = () => {
                     fontFamily: "DM Sans",
                     position: "absolute",
                     width: "20vw",
-                    margin: "0 0 0 77vw",
+                    margin: "0 0 0 68vw",
                     height: "20vh",
                     background: "rgba(0, 0, 0, 0.74)",
-                    top: "40.8vh",
+                    top: "36vh",
                     padding: "10px",
                     boxSizing: "border-box",
                 }}
