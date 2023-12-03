@@ -43,7 +43,7 @@ const News = () => {
             style={{
                 height: "90vh",
                 width: "30vw",
-                position: "relative",
+                position: "absolute",
                 borderRadius: "20px",
                 padding: "6px",
             }}
@@ -51,7 +51,7 @@ const News = () => {
             {/* News Image */}
             <img
                 src={news.urlToImage}
-                style={{ height: "51vh", borderRadius: "20px 20px 0 0", width: "20vw", margin: "9vh 0 0 58vw" }}
+                style={{ height: "51vh", borderRadius: "20px 20px 0 0", width: "20vw", margin: "9vh 0 0 77vw" }}
             />
 
             {/* News Description */}
@@ -67,7 +67,7 @@ const News = () => {
                     padding: "19px",
                     position: "absolute",
                     top: "61vh",
-                    left: "58.5vw",
+                    left: "77.4vw",
                     boxSizing: "border-box",
                 }}
             >
@@ -80,7 +80,7 @@ const News = () => {
                     fontFamily: "DM Sans",
                     position: "absolute",
                     width: "20vw",
-                    margin: "0 0 0 58vw",
+                    margin: "0 0 0 77vw",
                     height: "20vh",
                     background: "rgba(0, 0, 0, 0.74)",
                     top: "40.8vh",
