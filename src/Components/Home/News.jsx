@@ -1,28 +1,35 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const News = () => {
     // State variables to store news data, date, and time
     const [news, setNews] = useState(null);
     const [date, setDate] = useState("");
     const [time, setTime] = useState("");
+    const [loading, setLoading] = useState(true);
 
-    const apiKey = '0d4b689650d4422c92be83b3bdd152cd';
-
-    // Fetch news data when the component mounts
     useEffect(() => {
         const receiveNews = async () => {
             try {
                 const response = await fetch(
-                    `https://newsapi.org/v2/top-headlines?country=us&apiKey=${apiKey}`
+                    "https://newsapi.org/v2/top-headlines?country=us",
+                    {
+                        method: 'GET',
+                        headers: {
+                            'X-Api-Key': '0d4b689650d4422c92be83b3bdd152cd',
+                            'Authorization': 'Bearer 0d4b689650d4422c92be83b3bdd152cd'
+                        },
+                    }
                 );
                 const data = await response.json();
-                setNews(data.articles[0]);
+                setNews(data.articles && data.articles.length > 0 ? data.articles[0] : null);
             } catch (error) {
                 console.error("Error fetching news data:", error);
+            } finally {
+                setLoading(false);
             }
         };
         receiveNews();
-    }, [apiKey]);
+    }, []);
 
     // Set the current time when the component renders
     useEffect(() => {
@@ -43,6 +50,10 @@ const News = () => {
         const formattedToday = `${dd}-${mm}-${yyyy}`;
         setDate(formattedToday);
     }, []);
+
+    if (loading) {
+        return <p>Loading...</p>;
+    }
 
     return (
         <div
