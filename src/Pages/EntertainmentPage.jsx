@@ -1,10 +1,19 @@
 import Movies from "../Components/Entertainment/Movies";
 import Profile from "../assets/circleProfile.png";
 import styles from "../Components/Entertainment/Movies.module.css";
+import {useNavigate} from 'react-router-dom'
 
 const EntertainmentPage = () => {
   // Retrieve values from localStorage
   const genres = JSON.parse(window.localStorage.getItem("Genres"));
+
+  const navigate = useNavigate()
+
+  const goNext = () => {
+      navigate('/CategoryPage')
+    
+  };
+  
 
   return (
     <>
@@ -53,7 +62,10 @@ const EntertainmentPage = () => {
         {genres.map((genre) => (
           <Movies GenreSelection={genre} key={genre} />
         ))}
+        <button style={{ height: "40px", width: "145px", borderRadius: "20px", color: "white", backgroundColor: "green", border: "solid", borderColor: "black", fontSize: "1.1rem", fontFamily: "DM Sans", textAlign: "center", position:"relative", margin: "0vh 0 2vh 80vw"}} onClick={goNext}>Home Page</button>
       </div>
+
+      
     </>
   );
 };

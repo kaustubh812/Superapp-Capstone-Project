@@ -62,6 +62,7 @@ const Movies = ({ GenreSelection }) => {
           </div>
         ))}
       </div>
+      
     </>
   );
 };
