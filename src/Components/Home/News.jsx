@@ -11,17 +11,10 @@ const News = () => {
         const receiveNews = async () => {
             try {
                 const response = await fetch(
-                    "https://newsapi.org/v2/top-headlines?country=us",
-                    {
-                        method: 'GET',
-                        headers: {
-                            'X-Api-Key': '0d4b689650d4422c92be83b3bdd152cd',
-                            'Authorization': 'Bearer 0d4b689650d4422c92be83b3bdd152cd'
-                        },
-                    }
+                    "https://api.currentsapi.services/v1/latest-news?language=en&apiKey=CRuQox3hcaPDKJKgCRRY14aVWRa1zROlHEJy-4PV05jBhZ6h"
                 );
                 const data = await response.json();
-                setNews(data.articles && data.articles.length > 0 ? data.articles[0] : null);
+                setNews(data.news && data.news.length > 0 ? data.news[0] : null);
             } catch (error) {
                 console.error("Error fetching news data:", error);
             } finally {
@@ -66,9 +59,9 @@ const News = () => {
             }}
         >
             {/* News Image */}
-            {news && news.urlToImage && (
+            {news && news.image && (
                 <img
-                    src={news.urlToImage}
+                    src={news.image}
                     style={{ height: "56.2vh", borderRadius: "20px 20px 0 0", width: "20vw", margin: "-1vh 0 0 68vw" }}
                     alt="News"
                 />
