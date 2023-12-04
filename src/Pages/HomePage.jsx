@@ -4,14 +4,14 @@ import Weather from "../Components/Home/Weather";
 import News from "../Components/Home/News";
 import AllNotes from "../Components/Home/AllNotes";
 import TimerCard from "../Components/Home/TimerCard";
-import { Navigate, useNavigate } from "react-router-dom";
+import {useNavigate } from "react-router-dom";
 
 const HomePage = () => {
 
     const navigate = useNavigate();
 
     const goNext = () => {
-        navigate('./EntertainmentPage')
+        navigate('/EntertainmentPage')
     }
 
     return (
