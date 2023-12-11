@@ -117,3 +117,18 @@ h3 {
     text-align: left;
     z-index: 99;
 }
+
+.TEXT {
+    position: absolute;
+    color: white;
+    z-index: 99999;
+    font-family: Roboto;
+    font-size: 45px;
+    font-weight: 900;
+    line-height: 78px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    width: 550px;
+    left: 70px;
+    margin-top: -270px;
+}

@@ -141,6 +141,10 @@ const SignUp = () => {
 
         <p className={style.terms} style={{ top: '630px' }}>To learn more about how Superapp collects, uses, shares and protects your personal data please head Superapp <span style={{ color: "green" }}> Privacy Policy</span></p>
       </form>
+
+      <div className={style.TEXT}>
+        <p >Discover new things on Superapp</p>
+      </div>
     </div>
   );
 };
